@@ -5,11 +5,12 @@ const server = new Hapi.Server({
     port: 3000
 })
 
+console.log('------------------------------------------------');
 routes.forEach( ( route ) => {
-    console.log( `Method: ${ route.method } , Path : ${ route.path }` );
+    console.log( `Tag: ${ route.options.description } | Method: ${ route.method } , Path : ${ route.path } | Notes: ${ route.options.notes }`  );
     server.route( route );
-
 } );
+console.log('------------------------------------------------');
 
 async function start() {
 
