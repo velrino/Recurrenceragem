@@ -4,7 +4,7 @@ const routes = [
     {
         path: '/',
         method: 'GET',
-        handler: ( request, reply ) => {
+        handler: (request,reply) => {
             return { 
                 data: controllers.project.index()
             };
@@ -17,7 +17,7 @@ const routes = [
     {
         path: '/plans',
         method: 'GET',
-        handler: ( request, reply ) => {
+        handler: (request,reply) => {
             return { 
                 data: controllers.plans.list()
             };
@@ -30,7 +30,7 @@ const routes = [
     {
         path: '/plans',
         method: 'POST',
-        handler: ( request, reply ) => {
+        handler: (request,reply) => {
             return { 
                 data: controllers.plans.create()
             };
