@@ -1,12 +1,23 @@
+const axios = require('axios');
+
 const services = {
     PagarMe: {
-        token : function() {
-            return "12345";
-        },
-        init : function() {
-            return {
-                token: this.token()
-            };
+        API : 'https://api.pagar.me/',
+        TOKEN: 'ak_test_SdI4Oxc40Pioxgb9kdJiJrCPjPNyU2',
+        request : function(url,method="GET",body={}) {
+            let self = this;
+            return axios({
+                method: method,
+                headers: {
+                    api_key: self.TOKEN,
+                },
+                url: self.API+url,
+                data: Object.assign({api_key: self.TOKEN}, body)
+              }).then(function (response) {
+                return response.data;
+              }).catch(function (error) {
+                return error;
+            })
         },
     }
 };
