@@ -1,0 +1,22 @@
+{
+  "name": "recurrenceragem",
+  "version": "1.0.0",
+  "description": "Recurrenceragem is my personal project for learn more about the wonderful language programming with payment gateway in nodejs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/velrino/Recurrenceragem.git"
+  },
+  "author": "Velrino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/velrino/Recurrenceragem/issues"
+  },
+  "homepage": "https://github.com/velrino/Recurrenceragem#readme",
+  "dependencies": {
+    "hapi": "^17.5.1"
+  }
+}
