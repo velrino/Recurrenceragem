@@ -1,21 +1,9 @@
-'use strict';
-
-const Hapi=require('hapi');
-// const routes=require('./routes');
+import Hapi from 'hapi';
+import routes from './routes';
 
 const server = new Hapi.Server({  
     port: 3000
 })
-
-const routes = [
-    {
-        path: '/birds',
-        method: 'GET',
-        handler: ( request, reply ) => {
-            return "Hello World";
-        }
-    },
-];
 
 routes.forEach( ( route ) => {
     console.log( `Method: ${ route.method } , Path : ${ route.path }` );

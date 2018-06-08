@@ -1,13 +1,10 @@
 const routes = [
-
     {
-
-        path: '/birds',
+        path: '/',
         method: 'GET',
         handler: ( request, reply ) => {
             return "Hello World";
         }
-
     },
 ];
 
