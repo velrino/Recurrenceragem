@@ -2,6 +2,19 @@ import controllers from './controllers';
 
 const routes = [
     {
+        path: '/',
+        method: 'GET',
+        handler: ( request, reply ) => {
+            return { 
+                data: controllers.project.index()
+            };
+        },
+        options: {
+            description: 'ABOUT',
+            notes: 'About this project',
+        }
+    },
+    {
         path: '/plans',
         method: 'GET',
         handler: ( request, reply ) => {

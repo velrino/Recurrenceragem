@@ -1,6 +1,13 @@
 import services from './services';
 
 const controllers = {
+    project: {
+        index : function() {
+            return {
+                message: 'Recurrenceragem is my personal project for learn more about the wonderful language programming with payment gateway in nodejs.'
+            };
+        },
+    },
     plans: {
         list : function() {
             return services.PagarMe.request('1/plans')
