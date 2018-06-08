@@ -1,9 +1,11 @@
+import controllers from './controllers';
+
 const routes = [
     {
         path: '/',
         method: 'GET',
         handler: ( request, reply ) => {
-            return "Hello World";
+            return controllers.teste.init();
         }
     },
 ];
