@@ -28,3 +28,13 @@ Run project.
 ```
 npm start
 ```
+
+### Docker
+
+Requires [Docker Compose](https://docs.docker.com/compose/install/) v2+ to run.
+
+Run project.
+
+```
+docker-compose up
+```
